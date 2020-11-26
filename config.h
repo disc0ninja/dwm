@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=12", "nerdfonts:size=12" };
-static const char dmenufont[]       = "monospace:size=12"; 
+static const char *fonts[]          = { "Firacode Nerd Font:size=14", "nerdfonts:size=12" };
+static const char dmenufont[]       = "Firacode Nerd Font:size=16"; 
 static const char col_white[]       = "#ffffff";
 static const char col_gray[]        = "#2E2E2E";
 static const char col_blue_gray[]     = "#324b4c";
@@ -69,7 +69,8 @@ static const Layout layouts[] = {
 /* commands */
 // demnu stuff that I'm not using
  static char dmenumon[2] = "0"; /* dmenu options spawn */   
- static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_blue_gray, "-nf", col_gray, "-sb", col_blue, "-sf", col_white, NULL };
+/* static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_blue_gray, "-nf", col_gray, "-sb", col_blue, "-sf", col_white, NULL }; */
+ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_blue_gray, "-nf", col_white, "-sb", col_blue, "-sf", col_gray, NULL };
 
 static const char *termcmd[]  = { "alacritty", NULL };
 
