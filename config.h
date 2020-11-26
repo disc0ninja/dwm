@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=16", "nerdfonts:size=16" };
-static const char dmenufont[]       = "monospace:size=13"; 
+static const char *fonts[]          = { "monospace:size=12", "nerdfonts:size=12" };
+static const char dmenufont[]       = "monospace:size=12"; 
 static const char col_white[]       = "#ffffff";
 static const char col_gray[]        = "#2E2E2E";
 static const char col_blue_gray[]     = "#324b4c";
@@ -53,7 +53,10 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+/* Mod1Mask is default (Alt)
+*#define MODKEY Mod1Mask
+*/
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
